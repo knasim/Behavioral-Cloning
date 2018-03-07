@@ -100,4 +100,4 @@ model.fit_generator(train_generator, samples_per_epoch=len(train_samples),
     nb_epoch=5)
 
 print(model.summary())
-model.save('model-github.h5')
+model.save('model.h5')
