@@ -133,10 +133,8 @@ This implied that the model was overfitting.
 To combat the overfitting, I modified the model so that it has dropout layers (model.py lines:  88,90,92)
 
 
-The final step was to run the simulator to see how well the car was driving around track one. I found that the result was very good based
-on the data I personally collected (see video output file)
-The car successfully completed the entire first lap without going off the road and always staying in between the yellow lines.
-The car accomplished the goal of being able to drive autonomously around the track without leaving the road.
+The final step was to run the simulator to see how well the car was driving around track one. I found that the result was very good based on the data I personally collected (see video output file)
+The car successfully completed the entire first lap without going off the road and always staying in between the yellow lines. The car accomplished the goal of being able to drive autonomously around the track without leaving the road.
 
 #### 2. Final Model Architecture
 
@@ -149,23 +147,17 @@ To capture good driving behavior, I first recorded 3 laps on track one using cen
 
 ![alt text][https://github.com/knasim/Behavioral-Cloning/images/2018_03_04_22_37_09_528.jpg]
 
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
+I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to handle these driving behaviors.  Then I repeated this process on by recording 3 laps in the reverse direction.
 
-![alt text](https://github.com/knasim/Behavioral-Cloning/images/2018_03_04_22_37_09_528.jpg)   
-![alt text](https://github.com/knasim/Behavioral-Cloning/images/2018_03_04_22_37_09_528.jpg)                                
-![alt text](https://github.com/knasim/Behavioral-Cloning/images/2018_03_04_22_37_09_528.jpg) 
+To augment the data sat, I also flipped images and angles thinking that this would help with turn bias.   
+For example, here is an image that has then been flipped:
 
-Then I repeated this process on by recording 3 laps in the reverse direction.
+![alt text](https://github.com/knasim/Behavioral-Cloning/images/2018_03_04_22_37_09_528.jpg)
+![alt text](https://github.com/knasim/Behavioral-Cloning/images/2018_03_04_22_37_09_529.jpg)
 
-To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
-
-![alt text](/images/2018_03_04_22_37_09_528.jpg)                                
-![alt text](/images/2018_03_04_22_37_09_528.jpg)                                  
-
-Etc ....
 
 After the collection process, I ended with a CSV file just under 5MB.  I managed to collect a total of 12,349 data points.
-I then preprocessed this data by ...
+I then preprocessed this data by using model.py
 
 I finally randomly shuffled the data set and put Y% of the data into a validation set.
 
