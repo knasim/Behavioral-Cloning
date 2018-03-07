@@ -147,11 +147,11 @@ The final model architecture (model.py lines 78-93) consisted of a convolution n
 
 To capture good driving behavior, I first recorded 3 laps on track one using center lane driving. Here is an example image of center lane driving:
 
-![alt text][image2]  #TODO: ADD IMAGES
+![alt text][image2]
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
 
-![alt text](/images/2018_03_01_00_42_32_314.jpg)   
+![alt text](../images/2018_03_01_00_42_32_314.jpg)   
 ![alt text](/images/2018_03_01_00_42_32_314.jpg)                                
 ![alt text](/images/2018_03_01_00_42_32_314.jpg)                                 
 
@@ -160,7 +160,7 @@ Then I repeated this process on by recording 3 laps in the reverse direction.
 To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
 
 ![alt text](/images/2018_03_01_00_42_32_314.jpg)                                
-![alt text](/images/2018_03_01_00_42_32_314.jpg)                                
+![alt text](/images/2018_03_01_00_42_32_314.jpg)                                  
 
 Etc ....
 
