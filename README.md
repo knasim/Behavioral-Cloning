@@ -138,8 +138,7 @@ The car successfully completed the entire first lap without going off the road a
 
 #### 2. Final Model Architecture
 
-The final model architecture (model.py lines 78-93) consisted of a convolution neural network with the following layers and layer sizes:
-5 CNNs, 5x5, 3x3
+The final model architecture (model.py lines 78-93) consisted of a convolution neural network with the following layers and layer sizes: 5 CNNs, 5x5, 3x3 layers.
 
 #### 3. Creation of the Training Set & Training Process
 
@@ -149,8 +148,10 @@ To capture good driving behavior, I first recorded 3 laps on track one using cen
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to handle these driving behaviors.  Then I repeated this process on by recording 3 laps in the reverse direction.
 
-To augment the data sat, I also flipped images and angles thinking that this would help with turn bias.   
-For example, here is an image that has then been flipped using the OpenCV 2 library.
+To augment the data set I used Data Augmentation which not only helps the model generalize better but also expands
+the training set.  Using this technique I flipped images and angles thinking that this would help with turn bias.   
+For example, here is an image that has then been flipped using the OpenCV 2 library.  By doing so you can flip and invert
+the steering angle clockwise and counter-clockwise allowing the car to drive better.
 
 ![alt text](https://github.com/knasim/Behavioral-Cloning/blob/master/images/2018_03_04_22_37_09_528.jpg)
 ![alt text](https://github.com/knasim/Behavioral-Cloning/blob/master/images/2018_03_04_22_37_09_529.jpg)
@@ -159,8 +160,6 @@ For example, here is an image that has then been flipped using the OpenCV 2 libr
 After the collection process, I ended with a CSV file just under 5MB.  I managed to collect a total of 12,349 data points.
 I then preprocessed this data by using model.py
 
-I finally randomly shuffled the data set and put Y% of the data into a validation set.
+I finally randomly shuffled the data set and put 25% of the data into a validation set.
 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting.
-For me the ideal number of epochs was  5 and I used  batch size of 32.  I used an adam optimizer so that manually training
-the learning rate wasn't necessary.
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting. I found that the ideal number of epochs was  5 and I used  batch size of 32.  I used an adam optimizer so that manually training the learning rate wasn't necessary.
