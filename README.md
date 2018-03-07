@@ -145,12 +145,12 @@ The final model architecture (model.py lines 78-93) consisted of a convolution n
 
 To capture good driving behavior, I first recorded 3 laps on track one using center lane driving. Here is an example image of center lane driving:
 
-![alt text][https://github.com/knasim/Behavioral-Cloning/blob/master/images/2018_03_04_22_37_09_528.jpg]
+![alt text](https://github.com/knasim/Behavioral-Cloning/blob/master/images/2018_03_04_22_37_09_528.jpg)
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to handle these driving behaviors.  Then I repeated this process on by recording 3 laps in the reverse direction.
 
 To augment the data sat, I also flipped images and angles thinking that this would help with turn bias.   
-For example, here is an image that has then been flipped:
+For example, here is an image that has then been flipped using the OpenCV 2 library.
 
 ![alt text](https://github.com/knasim/Behavioral-Cloning/blob/master/images/2018_03_04_22_37_09_528.jpg)
 ![alt text](https://github.com/knasim/Behavioral-Cloning/blob/master/images/2018_03_04_22_37_09_529.jpg)
