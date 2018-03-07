@@ -110,9 +110,10 @@ The model used an Adam Optimizer, so the learning rate did not have to be tuned 
 
 Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving.  
 The data collection strategy I used was as follows:
-  i.  3 laps forward direction
-  ii. 2 laps reverse direction
-  iii. 2 laps steering right to left and vice versa.  
+
+    i.   3 laps forward direction
+    ii.  3 laps reverse direction
+    iii. 2 laps steering right to left and vice versa.  
 
 For details about how I created the training data, see the next section.
 
