@@ -151,7 +151,7 @@ To capture good driving behavior, I first recorded 3 laps on track one using cen
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
 
-![alt text](../images/2018_03_01_00_42_32_314.jpg)   
+![alt text](https://github.com/knasim/Behavioral-Cloning/blob/master/images/2018_03_01_00_42_32_314.jpg)   
 ![alt text](/images/2018_03_01_00_42_32_314.jpg)                                
 ![alt text](/images/2018_03_01_00_42_32_314.jpg)                                 
 
