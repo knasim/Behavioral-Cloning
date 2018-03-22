@@ -1,5 +1,9 @@
 # **Behavioral Cloning**
 
+### Resubmission:
+The file (reload_model.py) uses the trained model (model.h5).  Then new images were recorded using a "recovery action mode", which means: position the car when it's ready to go off-road and start recording new images while steering towards the center. This was done approx. 5-6 times to collect enough images.  Next the trained model was re-loaded (reload_model.py line 80) and the network was trained ONLY on the newly collected images from the "recovery action mode".  This resulted in much better overall autonomous driving of the car.  It was observed that the car stayed in the center of the road.  No tire left the drivable portion of the track surface.  The car never goes beyond the yellow lanes.
+The result of this can be viewed in the video (retrain_video.mp4).
+
 
 ### Introduction:
 This approach uses applied deep neural networks and convolutional neural networks (CNNs) to clone driving behavior by training,
